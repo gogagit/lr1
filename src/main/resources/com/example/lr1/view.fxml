@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.lr1.MainController"
+            style="-fx-background-color: #f4f6f8;">
+
+    <top>
+        <VBox spacing="10"
+              style="-fx-background-color: #2c3e50; -fx-padding: 14 18 14 18;">
+            <children>
+                <Label text="Графический редактор"
+                       style="-fx-text-fill: white; -fx-font-size: 20px; -fx-font-weight: bold;" />
+
+                <HBox spacing="10" alignment="CENTER_LEFT">
+                    <children>
+                        <Button text="Круг"
+                                onAction="#handleAddCircle"
+                                style="-fx-background-color: #3b82f6; -fx-text-fill: white; -fx-font-size: 13px; -fx-background-radius: 6; -fx-padding: 7 16;" />
+
+                        <Button text="Прямоугольник"
+                                onAction="#handleAddRectangle"
+                                style="-fx-background-color: #10b981; -fx-text-fill: white; -fx-font-size: 13px; -fx-background-radius: 6; -fx-padding: 7 16;" />
+
+                        <Button text="Треугольник"
+                                onAction="#handleAddTriangle"
+                                style="-fx-background-color: #f59e0b; -fx-text-fill: white; -fx-font-size: 13px; -fx-background-radius: 6; -fx-padding: 7 16;" />
+
+                        <Label text="Цвет:"
+                               style="-fx-text-fill: white; -fx-font-size: 13px;" />
+
+                        <ColorPicker fx:id="colorPicker" />
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </top>
+
+    <center>
+        <Canvas fx:id="drawingCanvas"
+                width="900"
+                height="520"
+                style="-fx-background-color: white; -fx-border-color: #cbd5e1; -fx-border-width: 1;" />
+    </center>
+
+    <bottom>
+        <HBox alignment="CENTER_LEFT"
+              spacing="8"
+              style="-fx-background-color: #e9eef3; -fx-padding: 8 16; -fx-border-color: #cbd5e1; -fx-border-width: 1 0 0 0;">
+            <children>
+                <Label text="Добавьте фигуру кнопкой сверху и перемещайте её мышью по рабочей области."
+                       style="-fx-text-fill: #334155; -fx-font-size: 12px;" />
+            </children>
+        </HBox>
+    </bottom>
+
+    <padding>
+        <Insets top="0" right="0" bottom="0" left="0"/>
+    </padding>
+</BorderPane>
+
