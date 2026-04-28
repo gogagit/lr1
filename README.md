@@ -41,3 +41,6 @@
 - JavaFX
 - FXML
 - Maven
+
+##Диграмма классов 
+<img width="1280" height="1133" alt="image" src="https://github.com/user-attachments/assets/66975d25-b2cf-4ffd-b3de-ef0477aef49e" />
