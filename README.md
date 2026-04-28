@@ -30,6 +30,11 @@
 
 Запуск выполняется через класс MainApplication.
 
+## Прискр работы программы
+
+<img width="1341" height="955" alt="image" src="https://github.com/user-attachments/assets/755e2e13-b6ee-4f22-afc9-d212fe36dd08" />
+
+
 ## Используемые технологии
 
 - Java
